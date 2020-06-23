@@ -34,5 +34,10 @@
 
 具体了解bootstrap详情可以查看官网 -- [bootstrap官网](getbootstrap.com)
 
+### 下载使用
 
+```git
+使用git克隆项目: git clone https://github.com/leibo521/Astronomical_WebSite.git
+或者你可以在界面上直接下载压缩包,解压后直接运行index.html就可以
+```
 

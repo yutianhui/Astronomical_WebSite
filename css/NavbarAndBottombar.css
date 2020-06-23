@@ -1,0 +1,113 @@
+/* 
+这是公共的css样式,将会被其他的css文件或者html文件引入
+专门作用于顶部导航栏和底部导航栏
+*/
+/* 设置导航栏相关样式 */
+.navbar{
+    z-index: 99999;
+    transition: top .3s;
+    position: sticky;
+    top: -52px;
+    margin-bottom: 7px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, .8);
+}
+.navbar:hover{
+    top: 0px;
+}
+.navbar-img:hover{
+    transform: rotateZ(360deg);
+}
+.navbar-img{
+    transition:all .8s ;
+}
+/* 设置底部的阴影 */
+.shdowwrap{
+    overflow: hidden;
+}
+.jumbotron3{
+    margin:  -20px 0px 0;
+}
+/* 设置底部图片的间距 */
+.imgCol{
+    margin-bottom: 10px;
+}
+.jumbotron-img-wrap img{
+    border: 4px solid rgba(134, 129, 129, 0.829);
+    margin: 2px 5px;
+}
+/* 使用媒体查询以使底部阴影适合不同的尺寸 */
+@media screen and (min-width: 1300px) {
+    /* 为轮播图适应超大屏幕 */
+    .carousel-item > img{
+        width: 100%;
+    }
+    .buttomshdow{
+        border-left: 900px solid rgb(233, 236, 239);
+        border-top: 200px solid transparent;
+        border-bottom: 20px solid rgb(233, 236, 239);
+        border-right: 900px solid rgb(233, 236, 239);
+    }
+}
+@media screen and (min-width: 568px) and (max-width: 1299px) {
+    .buttomshdow{
+        border-left: 700px solid rgb(233, 236, 239);
+        border-top: 200px solid transparent;
+        border-bottom: 20px solid rgb(233, 236, 239);
+        border-right: 700px solid rgb(233, 236, 239);
+    }
+}
+@media screen and (max-width: 567px) {
+    .buttomshdow{
+        border-left: 200px solid rgb(233, 236, 239);
+        border-top: 100px solid transparent;
+        border-bottom: 20px solid rgb(233, 236, 239);
+        border-right: 200px solid rgb(233, 236, 239);
+    }
+}
+/* 设置follow-us图标的拟态风格 */
+.follow-icon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 3rem;
+    /* 设置阴影 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+.follow-icon:hover{
+    transition: all .15s;
+    box-shadow:inset 2px 2px 5px rgba(0, 0, 0, .5);
+}
+/* 设置图标独立的样式,移入时的主题色 */
+.follow-icon-facebook{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.follow-icon-facebook:hover{
+    color: rgb(24, 119, 242) !important;
+}
+.follow-icon-twitter{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.follow-icon-twitter:hover{
+    color: rgb(45, 170, 225) !important;
+}
+.follow-icon-weixin{
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.follow-icon-weixin:hover{
+    color: rgb(45, 193, 0) !important;
+}
+.follow-icon-weibo{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.follow-icon-weibo:hover{
+    color: rgb(230, 22, 45) !important;
+}
+

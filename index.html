@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>发现更多美妙的事物,体会科学的魅力,理解世界的美妙</title>
+    <!-- 引入bootstrao核心样式 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入图标字体 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- 引入独立设置的样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- 导航条 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img class="navbar-img" src="./img/favicon.png" width="40" alt="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true" style="font-size: 25px;"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">主页</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        了解更多
+                    </a>
+                    <div class="dropdown-menu bg-dark" id="navcoll" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item bg-dark text-light" href="./html/Not_Found.html">关于恒星</a>
+                        <a class="dropdown-item bg-dark text-light" href="./html/Not_Found.html">关于行星</a>
+
+                        <a class="dropdown-item bg-dark text-light" href="./html/Not_Found.html">未解决的问题</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/Donation.html" tabindex="-1">捐赠我们</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="请输入..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">开始搜索</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- 轮播图容器 -->
+    <div>
+        <!-- 轮播图 -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleFade" data-slide-to="0"></li>
+                <li data-target="#carouselExampleFade" data-slide-to="1" class="active"></li>
+                <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="./img/carousel/cal-img1.jpg">
+                    <div class="carousel-caption d-md-block text-left">
+                        <h2 class="carousel-title">创新从不会消失</h2>
+                        <p>人类的智慧是伟大的,智慧创新的脚步不会停止.</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./img/carousel/cal-img2.jpg">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="carousel-title">不断探索</h2>
+                        <p>循着观测-理论-观测的发展途径,不断把人的视野伸展到宇宙的新的深处.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel/cal-img3.jpg">
+                    <div class="carousel-caption d-md-block text-right">
+                        <h2 class="carousel-title">不断认识未知</h2>
+                        <p>认识以前不知道的,开阔自己的认知边界.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 中间的文字banner -->
+    <div class="jumbotron">
+        <h1 class="display-4 ">欢迎来到这里!</h1>
+        <p class="lead ">人类所处的太阳系只是处于由无数恒星组成的银河系中的一隅。而银河系也只是一个普通的星系，除了银河系以外，还存在着许多的河外星系。星系又进一步组成了更大的天体系统，星系群、星系团和超星系团。
+        </p>
+        <hr class="my-4">
+        <p>如果你想了解,那么请开始你的探索,下面是太阳系中的一些行星</p>
+        <a class="btn btn-primary btn-lg" href="#cards" role="button">开始了解</a>
+    </div>
+
+    <!-- 卡片的容器 -->
+    <div class="container-lg" id="cards">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card need-float bg-dark text-light" style="width: 18rem;">
+                    <div class="cardImgWrap">
+                        <img src="./img/xingxing/shuixing.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">水星</h5>
+                        <p class="card-text">太阳系八大行星里，水星是离太阳最近的行星。中国称之为辰星。它每87.968个地球日绕行太阳一周，而每公转2.01周同时也自转3圈。</p>
+                        <a href="./html/Xingxing/shuixing.html" class="btn btn-primary">了解一下</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card need-float bg-dark text-light" style="width: 18rem;">
+                    <div class="cardImgWrap">
+                        <img src="./img/xingxing/jinxing.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">金星</h5>
+                        <p class="card-text">它清晨称为“启明”出现在东方天空；傍晚称为“长庚”处于天空的西侧。在日出稍前或日落稍后达到亮度最大</p>
+                        <a href="./html/Xingxing/jinxing.html" class="btn btn-primary">了解一下</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card need-float bg-dark text-light" style="width: 18rem;">
+                    <div class="cardImgWrap">
+                        <img src="./img/xingxing/earth.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">地球</h5>
+                        <p class="card-text">地球内部有地核、地幔、地壳结构、等。地球是目前宇宙中人类已知存在生命的唯一天体，是包括人类在内上百万种生物的家园。</p>
+                        <a href="./html/Xingxing/diqiu.html" class="btn btn-primary">了解一下</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-md-4">
+                <div class="card need-float bg-dark text-light" style="width: 18rem;">
+                    <div class="cardImgWrap">
+                        <img src="./img/xingxing/huoxing.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">火星</h5>
+                        <p class="card-text">二氧化碳为主的大气既稀薄又寒冷，沙尘悬浮其中，每年常有尘暴发生。火星两极皆有水冰与干冰组成的极冠会随着季节消长。</p>
+                        <a href="./html/Xingxing/huoxing.html" class="btn btn-primary">了解一下</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="card need-float bg-dark text-light" style="width: 18rem;">
+                    <div class="cardImgWrap">
+                        <img src="./img/xingxing/muxing.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">木星</h5>
+                        <p class="card-text">木星是一个气态巨行星,主要由氢组成，占其总质量的75%，其次为氦，占总质量的25%，岩核则含有其他较重的元素。</p>
+                        <a href="./html/Xingxing/muxing.html" class="btn btn-primary">了解一下</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card need-float bg-dark text-light" style="width: 18rem;">
+                    <div class="cardImgWrap">
+                        <img src="./img/xingxing/tuxing.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">土星</h5>
+                        <p class="card-text">土星有别的星球没有的幽亮冰环，主要的成分是冰的微粒和较少数的岩石以及等离子,已经确认的土星的卫星总共有82颗</p>
+                        <a href="./html/Xingxing/tuxing.html" class="btn btn-primary">了解一下</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="jumbotron jumbotron-fluid jumbotron2">
+        <div class="container">
+            <h1 class="display-4">宇宙冷知识</h1>
+            <p class="lead">这是你可能不太知道的关于宇宙和行星的冷知识,下面的折叠栏中有哦.</p>
+        </div>
+    </div>
+
+    <div class="container-lg">
+
+        <div class="row" id="accordionExampleRow">
+            <div class="accordion col" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                太阳真正的颜色是白色 #1
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            太阳真正的颜色是白色，这对许多人而言有点不可思议，因为在我们从小的教育中，红彤彤的太阳，或者是黄色的阳光，一直是我们对太阳刻骨铭心的印象，但为什么太阳是白色的呢？因为太阳光在经过我们地球大气层的时候，很多种决定太阳原来颜色的光波被大气层所过滤，所以我们看到的太阳的颜色，其实，就像被滤镜过滤过一样，改变了它原有的颜色。
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                太阳系中表面温度最高的行星不是水星 #2
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            水星虽然离太阳最近，但是其表面的温度白天最高也只有427摄氏度，而金星其表面就算在夜晚也有400多度，白天则最高温度可达500多摄氏度，所以金星表面的平均温度都在400多度以上，因而金星的表面温度才是太阳系中表面温度最高的行星，顺便说一下，水星也有其一个特点，就是其昼夜温差是太阳系中最大的，白天如火，晚上如冰。
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                照射到你的阳光可能是在人类历史之前就形成的 #3
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            我们都知道光从太阳的表面到地球上只需8分多钟，但是光子从太阳内部生产到达太阳表面的这个过程是非常漫长的，他需要不断的与电子光子碰撞吸收再被释放，才能来到太阳的表面，在这一过程当中大概需要百万年才能形成，也就是说太阳发射出来的光，照到我们身上的每一束光都有可能来自于百万年前。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 整个底部栏的设置 -->
+    <footer>
+        <!-- 底部栏上面的bannaer -->
+        <div class="shdowwrap">
+            <div class="buttomshdow"></div>
+        </div>
+        <!-- 底部栏 -->
+        <div class="jumbotron jumbotron-fluid jumbotron3">
+
+            <div class="container-lg">
+
+                <div class="row">
+                    <div class="col-12 col-md imgCol">
+                        <div class="jumbotron-img-wrap">
+                            <img src="./img/items/img1.jpg" width="60" class="rounded-circle" data-toggle="tooltip"
+                                data-placement="top" title="刘伟">
+                            <img src="./img/items/img4.jpg" width="60" class="rounded-circle" data-toggle="tooltip"
+                                data-placement="top" title="徐启钊">
+                            <img src="./img/items/img3.jpg" width="60" class="rounded-circle" data-toggle="tooltip"
+                                data-placement="top" title="雷博辉">
+                            <img src="./img/items/img2.jpg" width="60" class="rounded-circle" data-toggle="tooltip"
+                                data-placement="top" title="同奇">
+                            <img src="./img/items/img5.jpg" width="60" class="rounded-circle" data-toggle="tooltip"
+                                data-placement="top" title="韩凯成">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>特性</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="javascript:;">知识丰富</a></li>
+                            <li><a class="text-muted" href="javascript:;">整理发行</a></li>
+                            <li><a class="text-muted" href="javascript:;">有价值的信息</a></li>
+                            <li><a class="text-muted" href="javascript:;">有温度的知识</a></li>
+                            <li><a class="text-muted" href="javascript:;">来源可靠</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>关注我们</h5>
+                        <ul class="list-unstyled text-small">
+                            <li>
+                                <a class="text-muted follow-icon follow-icon-facebook" href="javascript:;"><i
+                                        class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a class="text-muted follow-icon follow-icon-twitter" href="javascript:;"><i
+                                        class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a class="text-muted follow-icon follow-icon-weixin" href="javascript:;"><i
+                                        class="fa fa-weixin" aria-hidden="true"></i></a>
+                                <a class="text-muted follow-icon follow-icon-weibo" href="javascript:;"><i
+                                        class="fa fa-weibo" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>关于我们</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="./html/About.html">我们是?</a></li>
+                            <li><a class="text-muted" href="./html/About.html#we">我们的团队?</a></li>
+                            <li><a class="text-muted" href="./html/Donation.html">考虑捐赠?</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- 引入bootstrap的js文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // 开启弹窗提示
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+        // 开启提示框
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+</body>
+
+</html>

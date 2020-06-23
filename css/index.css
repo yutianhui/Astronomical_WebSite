@@ -1,0 +1,66 @@
+/* 导入样式 */
+@import './NavbarAndBottombar.css';
+/* 设置轮播图相关的样式 */
+#carouselExampleFade{
+    margin: 0 0 4px;
+}
+.carousel-item{
+    overflow: hidden;
+    height: 27rem;
+    text-align: center;
+    
+}
+.carousel-title{
+    font-size: 30px;
+}
+
+/* 设置卡片相关样式 */
+.need-float {
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.need-float:hover {
+    position: relative;
+    animation: cradtransition .1s forwards linear;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+}
+/* 卡片被鼠标移入时的动画 */
+@keyframes cradtransition {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -8px;
+    }
+}
+/* 设置卡片中图片容器中图片的缩放 */
+.cardImgWrap{
+    height: 9rem;
+    overflow: hidden;
+}
+.cardImgWrap > img{
+    transition: all .4s;
+}
+.need-float:hover > .cardImgWrap > img{
+    transition: all .4s;
+    transform: scale(1.5);
+}
+/* 设置中间行的样式 */
+.row{
+    margin-top: -15px;
+    border-radius: 10px;
+    background-color: rgb(233, 236, 239);
+}
+/* 设置折叠栏的样式 */
+#accordionExampleRow{
+    margin-top: 10px;
+}
+#accordionExample{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* 设置巨幕的样式 */
+.jumbotron2{
+    margin: 10px 0;
+}

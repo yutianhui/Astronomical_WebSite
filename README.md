@@ -32,7 +32,7 @@
 ```
 ### 继续了解:
 
-具体了解bootstrap详情可以查看官网 -- [bootstrap官网](getbootstrap.com)
+具体了解bootstrap详情可以查看官网 -- [bootstrap官网](https://getbootstrap.com/)
 
 ### 下载使用
 

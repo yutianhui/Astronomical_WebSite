@@ -1,5 +1,5 @@
 // 控制动画
-$('document').ready(() => {
+$(document).ready(() => {
     let items = $("#we img")
     for(let i = 0;i < items.length;i++){
         $(items[i]).toggleClass("intro");

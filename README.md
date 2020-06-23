@@ -1,6 +1,6 @@
 # 使用Bootstrap构建的前端小项目
 
-### 引入:这是一个标准的bootstrap页面:
+### 引入:这是一个标准的bootstrap页面
 
 ```HTML
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>title</title>
-    <!-- 引入bootstrao核心样式 -->
+    <!-- 引入bootstrap核心样式 -->
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>

@@ -8,7 +8,7 @@
     transition: top .3s;
     position: sticky;
     top: -52px;
-    margin-bottom: 7px;
+    margin-bottom: 2px;
     box-shadow:0 5px 10px rgba(0, 0, 0, .8);
 }
 .navbar:hover{

@@ -1,19 +1,31 @@
+/* 设置巨幕的统一样式 */
 .jumbotron {
     border-radius: 0;
     padding: 2rem 0.5rem;
 }
+/* 设置顶部的巨幕 */
 .top-jumbotron{
     background-image: url('../img/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0.5rem 1.5rem 5rem;
-    box-shadow: inset 0 -10px 20px rgba(255, 255, 255, 1);
-    
+    padding: 0.5rem 1.5rem 7rem;
+    /* 设置巨幕的底部边距 */
+    margin-bottom: -40px;
+}
+/* 设置关于我们的样式 */
+.we-box{
+    /* 设置绝对定位 */
+    box-shadow: 0 -10px 8px rgba(0, 0, 0, .5);
+    background-color: white;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
 }
 .jumbotron-1 {
     margin-bottom: 0 !important;
 }
-
+.marketing{
+    padding-top: 30px;
+}
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -24,6 +36,14 @@
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+}
+/* 设置头像旋转 */
+.marketing img{
+    border: 8px solid rgba(0, 0, 0, .3);
+    transition: all 1s;
+}
+.marketing img:hover{
+    transform: rotateZ(360deg);
 }
 /* 设置的是卡片的样式 */
 .card-text1 {
@@ -52,16 +72,7 @@
         transform: scale(1);
     }
 }
-/* 设置头像旋转 */
-.marketing img{
-    border: 8px solid rgba(0, 0, 0, .3);
-    transition: all 1s;
-}
-.marketing img:hover{
-    transform: rotateZ(360deg);
-}
-
-/* 定义动画的类 */
+/* 定义动画的类,这个动画会加到头像旋转上 */
 .intro{
     transition: all 3s;
     animation: zhuandong 2s alternate;

@@ -1,5 +1,5 @@
+@import './Scrollbar.css';
 /* 设置导航栏相关样式 */
-
 .navbar {
 	z-index: 99999;
 	transition: top .3s;

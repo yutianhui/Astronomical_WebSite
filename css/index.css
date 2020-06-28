@@ -1,5 +1,6 @@
 /* 导入样式 */
 @import './NavbarAndBottombar.css';
+@import './Scrollbar.css';
 /* 设置轮播图相关的样式 */
 #carouselExampleFade{
     margin: 0 0 4px;

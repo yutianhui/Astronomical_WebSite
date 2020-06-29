@@ -1,61 +1,105 @@
 @import './Scrollbar.css';
 /* 设置巨幕的统一样式 */
+
 .jumbotron {
     border-radius: 0;
     padding: 2rem 0.5rem;
 }
+
 /* 设置顶部的巨幕 */
-.top-jumbotron{
+
+.top-jumbotron {
+    background-color: rgb(35, 5, 69);
     background-image: url('../img/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-position-y: -50px; */
     padding: 0.5rem 1.5rem 7rem;
     /* 设置巨幕的底部边距 */
-    margin-bottom: -40px;
+    margin-bottom: -35px;
 }
+
+/* 适应不同的设备尺寸 */
+
+@media screen and (max-width: 1477px) {
+    .top-jumbotron {
+        background-position-y: -25px;
+    }
+}
+
+@media screen and (min-width: 1478px) and (max-width: 1509px) {
+    .top-jumbotron {
+        background-position-y: -50px;
+        background-position-y: -35px;
+    }
+}
+
+@media screen and (min-width: 1509px) {
+    .top-jumbotron {
+        height: 445.2px;
+        background-position: bottom;
+        margin-bottom: -10px;
+    }
+}
+
 /* 设置关于我们的样式 */
-.we-box{
+
+.we-box {
     /* 设置绝对定位 */
-    box-shadow: 0 -10px 8px rgba(0, 0, 0, .5);
-    background-color: white;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
+    /* box-shadow: 0 -10px 8px rgba(0, 0, 0, .5); */
+    background-color: rgb(35, 5, 69);
+    /* border-top-left-radius: 45px;
+    border-top-right-radius: 45px; */
+    color: white;
 }
+
 .jumbotron-1 {
     margin-bottom: 0 !important;
+    background-color: rgb(35, 5, 69);
 }
-.marketing{
+
+.marketing {
     padding-top: 30px;
 }
+
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
 .marketing h2 {
     font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
 }
+
 /* 设置头像旋转 */
-.marketing img{
-    border: 8px solid rgba(0, 0, 0, .3);
+
+.marketing img {
+    border: 8px solid rgba(255, 255, 255, .3);
     transition: all 1s;
 }
-.marketing img:hover{
+
+.marketing img:hover {
     transform: rotateZ(360deg);
 }
+
 /* 设置的是卡片的样式 */
+
 .card-text1 {
     margin-top: -8px;
     margin-bottom: 2.5rem;
 }
+
 @media (min-width: 768px) {
     .card:hover {
         animation: huangdong 2s alternate;
     }
 }
+
 @keyframes huangdong {
     0% {
         transform: scale(1);
@@ -73,23 +117,62 @@
         transform: scale(1);
     }
 }
+
 /* 定义动画的类,这个动画会加到头像旋转上 */
-.intro{
+
+.intro {
     transition: all 3s;
     animation: zhuandong 2s alternate;
 }
-@keyframes zhuandong{
-    0%{
 
+@keyframes zhuandong {
+    0% {
         transform: rotateZ(0);
     }
-    50%{
+    50% {
         transform: rotateZ(360deg);
     }
-    to{
+    to {
         transform: rotateZ(0);
     }
 }
 
+/* 设置底部的样式 */
 
+.jumbotron3 {
+    color: white;
+    background-color: rgb(35, 5, 69);
+}
 
+.follow-icon {
+    /* 设置阴影 */
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, .5) !important;
+}
+
+.follow-icon:hover {
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, .5) !important;
+}
+
+.text-muted {
+    color: rgb(150, 150, 150) !important;
+}
+
+#banner {
+    margin: 0 auto 50px;
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    animation: dong 1s infinite alternate ease-out;
+}
+
+/* 添加动画 */
+
+@keyframes dong {
+    from {
+        width: 20px;
+    }
+    to {
+        width: 200px;
+    }
+}

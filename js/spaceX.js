@@ -2,7 +2,7 @@
 setTimeout(() => {
     $('.ironman').toggleClass('ironman-feixing')
     $('.ironman').toggleClass('ironman_huangdong')
-},2000)
+},1500)
 // 监听滚动
 $(document).scroll(() => {
     // 输出高度

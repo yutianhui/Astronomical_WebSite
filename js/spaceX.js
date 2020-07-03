@@ -6,7 +6,7 @@ setTimeout(() => {
 // 监听滚动
 $(document).scroll(() => {
     // 输出高度
-    if(Number($(document).scrollTop()) > 1300){
+    if(Number($(document).scrollTop()) > 1200){
         // 添加动画
         let flag = $("#banner").hasClass('banner-keyframe')
         if(!flag){

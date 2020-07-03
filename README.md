@@ -1,4 +1,4 @@
-# 使用Bootstrap构建的前端小项目
+# 使用Bootstrap构建
 
 *尽量使用chrome来查看这些网页,以达到最好的浏览体验*
 
